@@ -8,7 +8,7 @@
             int elfCalorie = 0;
             foreach (string line in File.ReadLines("./input.txt"))
             {
-                bool hasValue = Int32.TryParse(line, out int calorie);
+                bool hasValue = int.TryParse(line, out int calorie);
                 if (hasValue)
                 {
                     elfCalorie += calorie;
