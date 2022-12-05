@@ -11,8 +11,8 @@ internal static class Day4
     }
     private static bool Overlapped(int[] ranges)
     {
-        return (ranges[0] <= ranges[3] && ranges[3] <= ranges[1]) || // range 1 contains range 2 start
-               (ranges[2] <= ranges[1] && ranges[1] <= ranges[3]);   // range 1 contains range 2 end
+        return (ranges[0] <= ranges[3] && ranges[3] <= ranges[1]) || // range 1 contains range 2 end
+               (ranges[2] <= ranges[1] && ranges[1] <= ranges[3]);   // range 2 contains range 1 end
     }
 
     public static void Main(string[] args)
